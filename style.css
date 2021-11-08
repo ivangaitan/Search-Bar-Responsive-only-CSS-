@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+}
+
+
+/* FIRST MOBILE */
+
+.contenedor-medium{
+    display: none;
+}
+
+.contenedor-mobile{
+    display: flex;
+    padding: 20px;
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    
+}
+
+.contenedor-mobile__search{
+    display: flex;
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contenedor-mobile i{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(43, 43, 43);
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    
+}
+
+.contenedor-mobile input[type=text]{
+    font-family: 'Poppins';
+    color: #fff;
+    height: 50%;
+    background: transparent;
+    align-self: center;
+    margin: auto;
+    border: none;
+    border-bottom: 2px solid rgb(59, 202, 212);
+}
+
+.contenedor-mobile input[type=text]:focus{
+    outline: none;
+}
+
+.contenedor-mobile input[type=text]::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.contenedor-mobile[type=text] input:focus::placeholder {
+    color: black;
+}
+
+@media only screen and (min-width: 600px){
+    .contenedor-mobile{
+        display: none;
+    }
+
+    .contenedor-medium{
+        display: inline-block;
+        height: 10vh;
+        width: 100%;
+        background: rgb(58, 58, 58);
+    }
+
+    .contenedor-medium__search{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contenedor-medium input[type=text]{
+        height: 50%;
+        width: 50%;
+        font-family: 'Poppins';
+        font-size: 20px;
+        color: #fff;
+        align-self: center;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid rgb(59, 202, 212); 
+        outline: none;
+    }
+
+    .contenedor-medium i{
+        align-self: center;
+        color: #fff;
+        position: relative;
+        right: 2em;
+        font-size: 1.3em;
+    }
+
+    .contenedor-medium input[type=text]::placeholder{
+        font-family: 'Poppins';
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 800px){
+
+    .contenedor-medium{
+        height: 15vh;
+    }
+
+
+}
